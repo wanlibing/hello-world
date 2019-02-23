@@ -34,4 +34,11 @@ jobs:
           name: push your image
           command:
             echo "docker push imagename"            
-      
+workflows:
+  version: 2
+  authDeploy:
+    jobs:
+      - build
+      - deployToTest:
+          requires:
+            - build    
