@@ -30,7 +30,7 @@ jobs:
       - run: 
           name:  build docker image
           command:
-            docker build -t myimage.xxx.com/hello:v1 .
+            docker images
       - run:
           name: push your image
           command:
