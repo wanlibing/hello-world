@@ -17,7 +17,7 @@ jobs:
       - run:
           name: test hello.go
           command:
-            curl 127.0.0.1:8800
+            echo "test hello.go"
   deployToTest:
     docker:
       # specify the version
