@@ -12,7 +12,7 @@ jobs:
       - run: 
           name: start listen server
           command:
-            go run hello.go
+            go run hello.go &
       - run:
           name: test hello.go
           command:
