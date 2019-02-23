@@ -10,9 +10,10 @@ jobs:
 
       # specify any bash command here prefixed with `run: `
       - run: 
-          name: start listen server
+          name: start hello server
           command:
-            go run hello.go &
+            go build hello.go 
+            ./hello &
       - run:
           name: test hello.go
           command:
